@@ -2,3 +2,11 @@
     width: 40px;
     border-radius: 100px;
 }
+
+
+.photo-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 18px;
+    row-gap: 40px;
+}
