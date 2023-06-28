@@ -1,0 +1,74 @@
+
+
+
+.thumbnail{
+    width: 100%;
+}
+
+.project-title{
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 12px;
+}
+
+.project-preview{
+}
+
+.project-info-grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.channel-picture{
+}
+
+.project-info{
+}
+
+.project-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 18px;
+    row-gap: 40px;
+}
+
+.profile-picture{
+    width: 40px;
+    border-radius: 100px;
+}
+
+.thumbnail-row{
+    margin-bottom: 12px;
+}
+
+.project-desc{
+    font-size: 12px;
+    color: rgb(49, 49, 49);
+}
+
+.join_button{
+    background-color: white;
+    border-color: rgb(6, 95, 212);
+    border-style: solid;
+    border-width: 1px;
+    color: rgb(41, 118, 211);
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color .15s, color 0.15s;
+    vertical-align: top;
+}
+
+.join_button:hover{
+    background-color: rgb(6, 95, 212);
+    color: white;
+}
+
+.join_button:active{
+    opacity: 0.7;
+}
