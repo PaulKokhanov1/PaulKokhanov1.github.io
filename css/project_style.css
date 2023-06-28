@@ -2,7 +2,8 @@
 
 
 .thumbnail{
-    width: 100%;
+    width: 200px;
+    height: auto;
 }
 
 .project-title{
