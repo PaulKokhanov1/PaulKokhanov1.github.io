@@ -1,4 +1,6 @@
-
+* {
+    box-sizing: border-box;
+}
 
 
 .thumbnail{
@@ -51,6 +53,7 @@
     border: 2px solid #000;
     padding: 10px;
     overflow-y: auto;
+    line-height: 120%;
 }
 
 .join_button{
