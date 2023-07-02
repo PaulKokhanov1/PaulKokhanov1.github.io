@@ -48,6 +48,9 @@
 .project-desc{
     font-size: 12px;
     color: rgb(49, 49, 49);
+    border: 2px solid #000;
+    padding: 10px;
+    overflow-y: auto;
 }
 
 .join_button{
