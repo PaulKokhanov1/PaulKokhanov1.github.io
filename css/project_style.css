@@ -14,6 +14,9 @@
     margin-bottom: 12px;
 }
 
+.project-preview{
+    background-color: gray;
+}
 
 
 .project-info-grid{
@@ -23,7 +26,6 @@
 
 .project-grid{
     display: grid;
-    background-color: gray;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 18px;
     row-gap: 40px;
