@@ -51,6 +51,8 @@
 }
 
 .join_button{
+    display: block;
+    height: 100%;
     background-color: white;
     border-color: rgb(6, 95, 212);
     border-style: solid;
