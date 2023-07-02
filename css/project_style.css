@@ -33,9 +33,8 @@
 
 .project-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 18px;
-    row-gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
 }
 
 .profile-picture{
