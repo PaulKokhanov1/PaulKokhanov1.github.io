@@ -29,7 +29,7 @@
 
 .project-info-grid{
     display: grid;
-    grid-template-columns: 100px 1fr;
+    grid-template-columns: 1fr;
 }
 
 .project-grid{
@@ -50,11 +50,12 @@
     overflow-y: auto;
     height: 200px;
     line-height: 120%;
+    margin-bottom: 12px;
 }
 
 .join_button{
     display: block;
-    height: 100%;
+    width: 100%;
     background-color: white;
     border-color: rgb(6, 95, 212);
     border-style: solid;
