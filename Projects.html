@@ -31,7 +31,9 @@ subheading: See all the fun stuff I work on!
 					Firstly the drone is controlled via a Pixhawk which is microcontroller based, so inorder to get linux functionality on the FC we used a raspberry pi. 
 					Basically so we could do computer vision based control we can communicate to the raspberry pi via our ground station, i.e my laptop. 
 					The firmware that runs on our flight controller is ardupilot, the firmware interacts with and commands the hardware. 
-					Now we chose a microcontroller based board over a linux based board, for example the Navio is for a few reasons
+					Then we chose a microcontroller based board over a linux based board, for its faster computational speed. I also decided to use LIPO
+					batteries over Li-ion batteries due to the variation of their C-rating. For example, in our LIPO batteries we have a discharge rate of about 50 C
+					meaning we have a larger range for safe current draw. Our motors were brushless Motors
 				</p>
 
 				<button class="join_button">
@@ -57,12 +59,11 @@ subheading: See all the fun stuff I work on!
 				</p>
 		
 				<p class="project-desc">
-					Over the course of the summer, my previous coop gave me a stipend to use for skill development. 
-					I decided to learn to build a drone. I connected with someone on the internet offering a course for drone building and they mentored me into learning to create a drone from scratch. 
-					Firstly the drone is controlled via a Pixhawk which is microcontroller based, so inorder to get linux functionality on the FC we used a raspberry pi. 
-					Basically so we could do computer vision based control we can communicate to the raspberry pi via our ground station, i.e my laptop. 
-					The firmware that runs on our flight controller is ardupilot, the firmware interacts with and commands the hardware. 
-					Now we chose a microcontroller based board over a linux based board, for example the Navio is for a few reasons
+					I created an app that will connect to a bluetooth module on an arduino circuit to send information from the app to the circuit. 
+					The app itself implements a Google Maps API to get information and directions from a user’s current location to their destination of choice. 
+					Once the user has selected a destination, the app will draw a route from the user’s current location to the destination using decoded polylines and it will send the angle at which 
+					the user must move to the arduino circuit. From there, the circuit will use  the heading from the magnetometer to figure out which way the user/device 
+					is facing and then using the information from the app, the circuit will choose which LED to turn on.
 				</p>
 
 				<a href="https://github.com/PaulKokhanov1/Navigation-App">
@@ -88,12 +89,13 @@ subheading: See all the fun stuff I work on!
 				</p>
 		
 				<p class="project-desc">
-					Over the course of the summer, my previous coop gave me a stipend to use for skill development. 
-					I decided to learn to build a drone. I connected with someone on the internet offering a course for drone building and they mentored me into learning to create a drone from scratch. 
-					Firstly the drone is controlled via a Pixhawk which is microcontroller based, so inorder to get linux functionality on the FC we used a raspberry pi. 
-					Basically so we could do computer vision based control we can communicate to the raspberry pi via our ground station, i.e my laptop. 
-					The firmware that runs on our flight controller is ardupilot, the firmware interacts with and commands the hardware. 
-					Now we chose a microcontroller based board over a linux based board, for example the Navio is for a few reasons
+					Being a part of the UW Robotics Design Team we are required to build a remote controlled/ autonomous rover that can fulfill challenges specified by the Mars Society. 
+					There is an annual event held taking various universities across the globe to compete in proving their rover is the most efficient & optimal “Mars Rover”. 
+					One of the systems that was being redone was our 48 -24 V buck converter that was on a previous iteration of the rover but had too large of a ripple voltage.
+					I went through and got familiar with the design procedure, consulting specific documentation with respect to the controller we selected for the project.
+					Then we moved on to creating the schematic, getting it reviewed and proceeding with creating and optimizing the layout to prevent parastic effects. We made sure 
+					we had sufficient ground planes in order to minimize disruptions from signals propagating through the PCB. Finally, I also got to partially test the PCB before
+					finding issues with the inductors, which required us to order new parts and retest. Oh the joy of physical circuits and needing to reorder parts and resolder :) .
 				</p>
 
 				<button class="join_button">
@@ -119,12 +121,11 @@ subheading: See all the fun stuff I work on!
 				</p>
 		
 				<p class="project-desc">
-					Over the course of the summer, my previous coop gave me a stipend to use for skill development. 
-					I decided to learn to build a drone. I connected with someone on the internet offering a course for drone building and they mentored me into learning to create a drone from scratch. 
-					Firstly the drone is controlled via a Pixhawk which is microcontroller based, so inorder to get linux functionality on the FC we used a raspberry pi. 
-					Basically so we could do computer vision based control we can communicate to the raspberry pi via our ground station, i.e my laptop. 
-					The firmware that runs on our flight controller is ardupilot, the firmware interacts with and commands the hardware. 
-					Now we chose a microcontroller based board over a linux based board, for example the Navio is for a few reasons
+					While working at my first Coop with Tenneco I created an "Energy Savings Program". Basically, at the plant, we have multiple machines in the working area that are connected to one exhaust fan to clear dust and smoke from the welding cell.
+					Each cell is equip with a shutter that can be controlled with a valve. When the machine operates in the automatic cycle, the shutter opens and the fumes are extracted. If the cell is not in operation the shutter is closed. 
+					Since not all machines are operating at the same time, some shutters remain open and some remain closed for a significant amount of time. In order to run the fan efficiently, we decided to measure the static pressure in the duct in the position before the fan.
+					This static pressure measurement would change depending on how many shutters were open at that moment in time. So we would change the speed rotational frequency in order minimize the static pressure buildup in the vents
+					to prevent possible damage to the motors. I also got the chance to wire the electrical cabinet and create the schematic for this project!
 				</p>
 
 				<button class="join_button">
@@ -148,12 +149,14 @@ subheading: See all the fun stuff I work on!
 				</p>
 		
 				<p class="project-desc">
-					Over the course of the summer, my previous coop gave me a stipend to use for skill development. 
-					I decided to learn to build a drone. I connected with someone on the internet offering a course for drone building and they mentored me into learning to create a drone from scratch. 
-					Firstly the drone is controlled via a Pixhawk which is microcontroller based, so inorder to get linux functionality on the FC we used a raspberry pi. 
-					Basically so we could do computer vision based control we can communicate to the raspberry pi via our ground station, i.e my laptop. 
-					The firmware that runs on our flight controller is ardupilot, the firmware interacts with and commands the hardware. 
-					Now we chose a microcontroller based board over a linux based board, for example the Navio is for a few reasons
+					During one of classes in the 2A term, we were given a project to design and create an object sensing system that could be placed on a quote on quote Mars Rover that could determine whether there was an object in its FOV, 
+					how far away this object was and where the center of the object was located with respect to our rover. The distance was measured using an ultrasonic sensor. 
+					Our process of scanning the area around the rover was done by using two servo motors. One being used for panning and the other for tilt. 
+					There was also a laser pointer in order to give a visual aid to observers the center line of the FOV. With this system I implemented a manual control via a joystick, 
+					but also there was an automatic control. The automatic control would scan the entire range of rotation that the servo motors could provide and create calculations in order to determine 
+					how many objects were sensed, where there were located with respect to the servo’s rotation measured in microseconds. The entire system was coded via the STM32CubeIDE where the code was loaded onto a
+					 nucleo F401RE board to manage the peripherals. Also we set up UART connections in order to display the needed information onto our laptop which we connected via PUTTY. 
+					 Overall, even though our tests were not exceptionally difficult we saw that testing displayed a distance sensing accuracy of ~95 % and an object angular width calculation accuracy of 93 %. 
 				</p>
 
 				<button class="join_button">
