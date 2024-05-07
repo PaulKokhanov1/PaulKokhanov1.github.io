@@ -15,7 +15,11 @@ subheading: See all the fun stuff I work on!
             
 	<div class="project-preview">
 		<div class="thumbnail-row">
-			<img class="thumbnail" style="width:90%" src="images/base_img.PNG">
+			<!--  <img class="thumbnail" style="width:90%" src="images/base_img.PNG"> -->
+			<video width="320" height="240" autoplay muted>
+				<source src="videos/24_hour_training.mp4" type="video/mp4">
+			  Your browser does not support the video tag.
+			</video> 
 		</div>
 		<div class="project-info-grid">
 
@@ -93,11 +97,8 @@ subheading: See all the fun stuff I work on!
 				</p>
 		
 				<p class="project-desc">
-					I created an app that will connect to a bluetooth module on an arduino circuit to send information from the app to the circuit. 
-					The app itself implements a Google Maps API to get information and directions from a user’s current location to their destination of choice. 
-					Once the user has selected a destination, the app will draw a route from the user’s current location to the destination using decoded polylines and it will send the angle at which 
-					the user must move to the arduino circuit. From there, the circuit will use  the heading from the magnetometer to figure out which way the user/device 
-					is facing and then using the information from the app, the circuit will choose which LED to turn on.
+					I created an android app and associated hardware to act as compass to direct a user toward a specific destination using the Google Maps API.
+					The hardware uses LED's to direct the user accordingly, the expected usage was to be placed on a longboard or skateboard to avoid making the user constantly look at their phone.
 				</p>
 
 				<a href="https://github.com/PaulKokhanov1/Navigation-App">
